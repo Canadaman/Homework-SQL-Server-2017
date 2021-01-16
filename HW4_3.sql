@@ -23,6 +23,6 @@ WITH NumberedTransactions AS (
 	FROM Sales.Customers c
 	INNER JOIN Sales.CustomerTransactions ct ON c.CustomerID = ct.CustomerID
 )
-SELECT * FROM NumberedTransactions nt WHERE nt.RowNumber <= 5;ID;
+SELECT * FROM NumberedTransactions nt WHERE nt.RowNumber <= 5;
 
 
